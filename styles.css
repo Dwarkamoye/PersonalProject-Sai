@@ -1,0 +1,149 @@
+/*Copyright (c) 2025 Dwarkamoye Mohanty. All Rights Reserved.
+  This file is part of the Personal Project by Dwarkamoye Mohanty
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    
+}
+
+html{
+    background-image: url(./heart-background.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    animation: fadeInBackground 3s ease-in-out forwards; 
+}
+
+.bold-fonts
+{
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px !important;
+}
+
+.container {
+    text-align: center;
+}
+
+#letter-button {
+    padding: 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+#letter-button:hover::before {
+    background-color: #ff1493;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#letter-animation {
+    margin-top: 20px;
+    font-size: 50px !important;
+}
+
+.response-buttons button {
+    padding: 15px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.response-buttons button:hover {
+    background-color: #ff1493;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#heart {
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    opacity: 0;
+    animation: heart-animation 2s ease-in-out forwards;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup p {
+    font-size: 20px;
+    color: #333;
+}
+
+.popup.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0s 0s;
+}
+.close-btn{
+    margin-left: 314px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@keyframes heart-animation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
