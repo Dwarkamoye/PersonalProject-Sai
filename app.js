@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // After animation, show the final message
         setTimeout(() => {
-            letterAnimation.innerHTML = "<p class='letter-text bold-fonts'>Thank you, Sai will see you soon! 💖</p><iframe width='400' height='315' src='https://www.youtube.com/embed/ilNt2bikxDI?si=HPPMcT2uYNq2xPjh' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='no-referrer-when-downgrade' allowfullscreen></iframe>";
+            letterAnimation.innerHTML = "<p class='letter-text bold-fonts' style='width: -webkit-fill-available'>Thank you, Sai will see you soon! 💖</p><iframe width='385' height='315' src='https://www.youtube.com/embed/ilNt2bikxDI?si=HPPMcT2uYNq2xPjh' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='no-referrer-when-downgrade' allowfullscreen></iframe>";
 
             // Send the email
             sendEmail();
