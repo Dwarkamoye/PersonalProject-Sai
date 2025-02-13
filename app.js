@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             letterAnimation.innerHTML = "<p>Thank you, Sai will see you soon! 💖</p><iframe width='560' height='315' src='https://www.youtube.com/embed/ilNt2bikxDI?si=HPPMcT2uYNq2xPjh' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='no-referrer-when-downgrade' allowfullscreen></iframe>";
 
             // Send the email
-            //sendEmail();
+            sendEmail();
 
             // Remove the heart animation
             heart.remove();
