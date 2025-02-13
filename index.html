@@ -1,0 +1,39 @@
+<!--
+  Copyright (c) 2025 Dwarkamoye Mohanty. All Rights Reserved.
+  This file is part of the Personal Project by Dwarkamoye Mohanty
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Theme Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="message-container">
+            <p id="message" class="bold-fonts">Hi Mili, Sai has a message for you.</p>
+            <button id="letter-button" name="see-me" onmouseover="document.getElementsByName('see-me')[0].innerHTML ='Yay show me!';" 
+            onmouseleave="document.getElementsByName('see-me')[0].innerHTML ='Wanna see';">Wanna see</button>
+        </div>
+        
+        <div id="letter-animation" class="hidden">
+            <p id="letter-text" class="letter-text bold-fonts">Will you be my valentine?</p>
+            <div id="response-buttons" class="response-buttons">
+                <button id="yes-button" class="hidden">Yeah definitely</button>
+                <button id="no-button" class="hidden">No</button>
+            </div>
+        </div>
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <span id="close-btn" class="close-btn">&times;</span>
+                <p>Try again, something went wrong &#128557;</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+</html>
